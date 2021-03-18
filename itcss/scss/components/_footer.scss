@@ -1,0 +1,37 @@
+/*component - footer*/
+
+.footer{
+    font-size: 20px;
+    line-height: 22px;
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__menu{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background-color: darkkhaki;
+        color: white;
+
+        @include md{
+            width: 50%
+        }
+
+    }
+
+    &__copyright{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background-color: darksalmon;
+        color: white;
+
+        @include md{
+            width: 50%
+        }
+    }
+}
+
+/*end component - footer*/

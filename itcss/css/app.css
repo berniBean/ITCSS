@@ -1,0 +1,207 @@
+/*SETTINGS*/
+/*SETTINGS*/
+/*end settings*/
+/*Tools - (FUNCS - MIXINS)*/
+/*tools - functions*/
+/*end tools - functions*/
+/*tools mixins*/
+/*end tools mixins*/
+/*GENERIC*/
+/*generic*/
+*,
+*:after,
+*::before {
+  padding: 0;
+  margin: 0;
+  outline: 0px solid;
+  box-sizing: border-box; }
+  *:hover, *:active, *:focus, *:visited,
+  *:after:hover,
+  *:after:active,
+  *:after:focus,
+  *:after:visited,
+  *::before:hover,
+  *::before:active,
+  *::before:focus,
+  *::before:visited {
+    outline: 0px solid; }
+
+/*TAGS*/
+/*TAGS*/
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
+
+/*END TAGS*/
+/*keyframes*/
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(19px); } }
+
+/*OBJECTS*/
+/*object color*/
+.color-blue {
+  color: blue; }
+  .color-blue:hover {
+    color: darkblue; }
+
+.color-primary {
+  color: red; }
+
+.color-secundary {
+  color: lightgreen; }
+
+/*end object color*/
+/*object container*/
+.container {
+  max-width: 100%;
+  width: 1200px;
+  display: block;
+  margin: 0 auto; }
+
+/*end object container*/
+/*COMPONENTS*/
+/*component - footer*/
+.footer {
+  font-size: 20px;
+  line-height: 22px;
+  background-color: lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .footer__menu {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: darkkhaki;
+    color: white; }
+    @media (min-width: 1101px) {
+      .footer__menu {
+        width: 50%; } }
+  .footer__copyright {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: darksalmon;
+    color: white; }
+    @media (min-width: 1101px) {
+      .footer__copyright {
+        width: 50%; } }
+
+/*end component - footer*/
+/*componente - formulario*/
+.form {
+  width: 480px;
+  display: block;
+  background-color: lightblue;
+  padding: 20px;
+  outline: 1px solid darkblue;
+  margin: 0 auto;
+  margin-top: 200px; }
+  .form__field {
+    width: 100%;
+    display: block;
+    background-color: lightgreen;
+    padding: 20px;
+    outline: 1px solid darkgreen;
+    margin-top: 20px; }
+    .form__field--last {
+      margin-bottom: 0px; }
+  .form__label {
+    width: 100%;
+    display: block;
+    color: black;
+    padding-bottom: 5px; }
+    .form--labels-right .form__label {
+      text-align: right; }
+  .form__input {
+    appearance: none;
+    width: 100%;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px; }
+  .form__textarea {
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+    height: 100px;
+    min-height: 100px;
+    max-height: 400px;
+    resize: vertical; }
+  .form__submit {
+    border: 1px solid darkgray;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: darkgray;
+    padding: 8px 10px;
+    min-width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer; }
+
+/*componente - formulario*/
+/*componenr - header*/
+.header {
+  width: 100%;
+  display: flex;
+  background-color: lightblue;
+  padding: 20px;
+  outline: 1px solid darkblue;
+  margin-bottom: 40px; }
+  .header__col {
+    width: 50%;
+    display: block;
+    display: flex;
+    background-color: lightgreen;
+    padding: 20px;
+    outline: 1px solid darkgreen;
+    margin-bottom: 40px; }
+    .header__col--grey {
+      background-color: lightgray; }
+  .header__logo {
+    width: 100px;
+    display: block;
+    max-width: 100%;
+    margin: 0px; }
+  .header__menu {
+    width: 100%;
+    display: block;
+    background-color: lightcoral;
+    padding: 20px;
+    outline: 1px solid darkred; }
+  .header__menu-link {
+    color: black;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none; }
+
+/*component -- tabs*/
+.tabs {
+  display: block;
+  width: 100%; }
+  .tabs__title {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 22px; }
+  .tabs__content {
+    text-decoration: none;
+    display: inline-block; }
+
+/*end component -- tabs*/
+/*UTILITIES*/
+/*utilities*/
+.none {
+  display: none; }
+
+.tar {
+  text-align: right !important; }
+
+/*utilities*/

@@ -1,0 +1,52 @@
+
+
+/*componenr - header*/
+.header{
+
+    width: 100%;
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+    outline: 1px solid darkblue;
+    margin-bottom: 40px;
+
+
+    &__col{
+        width: 50%;
+        display: block;
+        
+        display: flex;
+        background-color: lightgreen;
+        padding: 20px;
+        outline: 1px solid darkgreen;
+        margin-bottom: 40px;
+
+        &--grey{
+            background-color: lightgray;
+        }
+
+    }
+
+    &__logo{
+        width: 100px;
+        display: block;
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    &__menu{
+        width: 100%;
+        display: block;
+        background-color: lightcoral;
+        padding: 20px;
+        outline: 1px solid darkred;
+    }
+
+    &__menu-link{
+        color: black;
+        display: inline-block;
+        padding-right: 10px;
+        text-decoration: none;
+
+    }
+}

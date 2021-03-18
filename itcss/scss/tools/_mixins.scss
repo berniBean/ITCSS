@@ -1,0 +1,39 @@
+/*tools mixins*/
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculate-rem($size);
+    
+}
+
+@mixin sm() {
+    
+    @media (min-width: 501px){
+        @content;
+    }
+}
+
+@mixin md() {
+    
+    @media (min-width: 1101px){
+        @content;
+    }
+}
+
+//range
+@mixin only-xs() {
+    
+    @media (min-width: 0px) and (max-width: 500px){
+        @content;
+    }
+
+
+}
+
+@mixin only-sm() {
+    @media (min-width: 501px) and (max-width: 1100px){
+        @content;
+    }
+}
+
+/*end tools mixins*/

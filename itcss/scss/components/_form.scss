@@ -1,0 +1,73 @@
+/*componente - formulario*/
+.form{
+    width: 480px;
+    display: block;
+    background-color: lightblue;
+    padding: 20px;
+    outline: 1px solid darkblue;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    &__field{
+        width: 100%;
+        display: block;
+        background-color: lightgreen;
+        padding: 20px;
+        outline: 1px solid darkgreen;
+        margin-top: 20px;
+
+        &--last{
+            margin-bottom: 0px;
+        }
+    }
+
+    $b : &;
+
+    &__label{
+        width: 100%;
+        display: block;
+        color: black;
+        padding-bottom: 5px;
+
+        #{$b}--labels-right &{
+            text-align: right;
+        }
+    }
+
+    &__input{
+        appearance: none;
+        width: 100%;
+        display: block;
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+
+    &__textarea{
+        width: 100%;
+        display: block;
+        background-color: white;
+        padding: 5px 10px;
+        border: 1px solid black;
+        height: 100px;
+        min-height: 100px;
+        max-height: 400px;
+        resize: vertical;
+    }
+
+    &__submit{
+        border: 1px solid darkgray;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        background-color: darkgray;
+        padding: 8px 10px;
+        min-width: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+}
+
+/*componente - formulario*/
